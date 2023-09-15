@@ -12,9 +12,9 @@ const LoadingModal: React.FC<ModalProps> = ({ isOpen, onComplete }) => {
     if (isOpen) {
       const interval = setInterval(() => {
         setPercentage((prevPercentage) =>
-          prevPercentage < 100 ? prevPercentage + 5 : prevPercentage
+          prevPercentage < 100 ? prevPercentage + 1 : prevPercentage
         );
-      }, 100);
+      }, 50);
 
       return () => clearInterval(interval);
     }

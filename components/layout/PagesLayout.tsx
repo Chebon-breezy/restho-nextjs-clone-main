@@ -47,7 +47,7 @@ const PagesLayout: React.FC<PagesLayoutProps> = ({ children }) => {
   return (
     <>
       <LoadingModal
-        closeModal={closeModal}
+        //closeModal={closeModal}
         isOpen={isModalOpen}
         onComplete={handleLoadingComplete}
       />
