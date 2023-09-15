@@ -5,7 +5,7 @@ import { Jost } from "next/font/google";
 const jost = Jost({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Resthotel Restaurant",
+  title: "Restho Restaurant",
   description: "Come and have a great experience",
 };
 
