@@ -43,7 +43,7 @@ const NavListDesktop = () => {
                               <>
                                 <li
                                   key={id}
-                                  className="cursor-pointer transition duration-500 hover:text-[#bf9444] "
+                                  className="cursor-pointer transition duration-500 hover:text-[#ffffffcc] "
                                 >
                                   {name}
                                 </li>
@@ -87,19 +87,22 @@ const Navbar = () => {
   }, []);
   const otherStyles: React.CSSProperties = {
     boxShadow: "5px 3px 40px hsla(0,0%,39%,.1)",
+    borderRadius: 0,
+    backgroundColor: "#1A1C14",
+    maxWidth: "none",
   };
   const NavbarStyles = {
-    Nav: tw.nav`flex justify-between items-center p-8 rounded-full bg-[#f8f9fa] max-w-[90%] w-full z-[999] transition ease-in duration-150 delay-75 relative shadow-md`,
+    Nav: tw.nav`flex justify-between items-center p-8 rounded-full max-w-full w-full z-[999] transition ease-in duration-150 delay-75 relative shadow-md`,
   };
   const { Nav } = NavbarStyles;
   return (
     <>
       <NavbarTop />
-      {/* <PageWrapper classNames="max-w-full mx-0"> */}
       <div className="flex w-full justify-center items-center">
         <Nav
           className={cx(isNavVisible && "top-0 fixed w-full")}
           style={otherStyles}
+          //ref={navbarRef}
         >
           <Image
             src="https://restho-nextjs.vercel.app/assets/images/header2-logo.svg"
@@ -108,17 +111,13 @@ const Navbar = () => {
             height={200}
             className="cursor-pointer w-[10vh] md:w-[30vh]"
           />
-          {/*  */}
           <NavListDesktop />
-          {/*  */}
           <AiOutlineMenu className="block md:hidden cursor-pointer" size={16} />
           <Button className="bg-[#bf9444] hidden md:block px-10 py-4 rounded-full text-[#ffffffcc]">
             Find Reservation
           </Button>
         </Nav>
       </div>
-
-      {/* </PageWrapper> */}
     </>
   );
 };

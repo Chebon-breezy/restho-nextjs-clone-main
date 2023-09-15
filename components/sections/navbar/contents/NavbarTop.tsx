@@ -6,7 +6,7 @@ import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 
 const NavbarTop = () => {
   const NavbarTopStyles = {
-    Layout: tw.div`flex justify-between items-center px-4 md:px-20 w-full py-2 md:py-5 bg-gray-900 text-sm md:text-base`,
+    Layout: tw.div`flex justify-start items-center px-4 md:px-20 w-full py-2 md:py-5 bg-[#1A1C14] text-sm md:text-base`,
     Flex: tw.div`flex items-center gap-x-2 text-[#f8f9fa]`,
     Email: tw.div`flex items-center gap-x-1`,
     Location: tw.div`flex items-center gap-x-1`,
