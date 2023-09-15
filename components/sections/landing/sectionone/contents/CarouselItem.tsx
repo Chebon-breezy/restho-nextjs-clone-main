@@ -26,7 +26,9 @@ const CarouselItem = () => {
   };
   const { Grid, Left, Right } = CarouselItem;
   return (
-    <div className="">
+    <div className="bg-[#1B1C14]">
+      {" "}
+      {/* Add bg-[#1B1C14] class here */}
       <Swiper
         direction="horizontal"
         speed={6000}
