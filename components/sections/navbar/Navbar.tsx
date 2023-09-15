@@ -17,7 +17,7 @@ const NavListDesktop = () => {
   const Styles = {
     Layout: tw.ul`hidden md:flex items-center gap-x-3`,
     NavItemGroup: tw.li`group relative px-3 py-2`,
-    NavItem: tw.div`flex items-center text-2xl font-medium `,
+    NavItem: tw.div`flex items-center text-2xl font-medium text-[#f8f9fa] `,
   };
   const { Layout, NavItem, NavItemGroup } = Styles;
   return (
